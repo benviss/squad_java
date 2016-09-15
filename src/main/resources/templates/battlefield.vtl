@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>Your Team:</h4>
+      <p><strong>Team Name: </strong>$team.getTeamName()</p>
+      <p><strong>Team Motto: </strong>$team.getMotto()</p>
+      <p><strong>Team Objective: </strong>$team.getObjective()</p>
+      <br>
+
+    </div>
+    <div class="col-xs-6">
+      <h4>Enemy Team:</h4>
+      <p><strong>Team Name: </strong>$enemy.getTeamName()</p>
+      <p><strong>Team Motto: </strong>$enemy.getMotto()</p>
+      <p><strong>Team Objective: </strong>$enemy.getObjective()</p>
+      <br>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6">
+      <ul>
+        #foreach ($squadie in $squadRoster)
+          <li>$squadie.getSuperName()</li>
+        #end
+      </ul>
+    </div>
+    <div class="col-xs-6">
+      <ul>
+        #foreach ($squadie2 in $squadRoster2)
+          <li>$squadie2.getSuperName()</li>
+        #end
+      </ul>
+    </div>
+  </div>
+</div>

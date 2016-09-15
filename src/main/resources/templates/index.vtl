@@ -1,0 +1,19 @@
+<h1>Welcome to Super Squad!</h1>
+
+<h4>Here are your list of Supers to choose from!</h4>
+<h5>You can pick three supers to be on your team!</h5>
+<br>
+<ul>
+  #foreach($super in $roster)
+    #if (!$squadRoster.contains($super))
+    <li><a href="/super/$super.getID()">$super.getSuperName()</a></li>
+    #end
+  #end
+</ul>
+<br>
+<h4>Here is your new Team!</h4>
+<ul>
+  #foreach($squadie in $squadRoster)
+  <li>$squadie.getSuperName()</a></li>
+  #end
+</ul>
