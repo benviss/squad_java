@@ -9,3 +9,4 @@ Two classes for each Team?
 Main class for battlefield?
 
 add super to team
+# squad_java
